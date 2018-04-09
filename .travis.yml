@@ -28,3 +28,4 @@ install:
 script:
   - npm run lint:js
   - ember exam --reporter dot $RANDOMISE
+ 
