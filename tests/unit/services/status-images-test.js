@@ -56,13 +56,13 @@ module('Unit | Service | status images', function (hooks) {
   test('it generates a Markdown image string with a repo', function (assert) {
     const service = this.owner.lookup('service:status-images');
     const markdown = service.markdownImageString(this.repo);
-    assert.equal(markdown, `[![Build Status](${root}/travis-ci/travis-web.svg)](${secureRoot}/travis-ci/travis-web)`);
+    assert.equal(markdown, `[![Build Status 🛠](${root}/travis-ci/travis-web.svg)](${secureRoot}/travis-ci/travis-web)`);
   });
 
   test('it generates a Markdown image string with a repo and a branch', function (assert) {
     const service = this.owner.lookup('service:status-images');
     const markdown = service.markdownImageString(this.repo, branch);
-    assert.equal(markdown, `[![Build Status](${root}/travis-ci/travis-web.svg?branch=primary)](${secureRoot}/travis-ci/travis-web)`);
+    assert.equal(markdown, `[![Build Status 🛠](${root}/travis-ci/travis-web.svg?branch=primary)](${secureRoot}/travis-ci/travis-web)`);
   });
 
   test('it generates a Textile image string with a repo', function (assert) {
