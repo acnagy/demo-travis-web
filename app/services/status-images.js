@@ -35,7 +35,7 @@ export default Service.extend({
     const imageUrl = this.imageUrl(repo, branch);
     return `[![Build Status 🛠](${imageUrl})](${url})`;
   },
-
+  
   textileImageString(repo, branch) {
     const url = this.repositoryUrl(repo);
     const imageUrl = this.imageUrl(repo, branch);
